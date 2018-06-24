@@ -1,0 +1,20 @@
+MEME version 4
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies (from uniform background):
+A 0.25000 C 0.25000 G 0.25000 T 0.25000 
+
+MOTIF toy_PWM_2_invalid
+
+letter-probability matrix: alength= 4 w= 6 nsites= 20 E= 0
+  0.1	  0.2	  0.3	  0.4	
+  0	  1	  0	  0	
+  0.6	  0.3	  0	  0.1	
+  0.4	  0.3	  0.2	  0.1	
+  0.2	  0.3	  0.3	  0.2	
+  0.25	  0.25	  0.25	  0.25	
+
+URL http://example.toy.com
