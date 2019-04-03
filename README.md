@@ -1,16 +1,16 @@
-# Overview: kernel-to-PWM transformation
+# An exact kernel-to-PWM transformation
 
 Convolutional neural networks use kernels to extract informative motifs from massive amount of sequence datasets. However, the only way to distill the motifs from these kernels is a heuristic one from Deepbind (Alipanahi et al., 2015) that aligns all matched sequence segments altogether and calculate the frequency directly, leading to one Position Weight Matrix (PWM) for each kernel.
 
-Here we discovered an exact transformation from kernel to PWM, in the sense that the convolution result of the kernel on a given sequence fragment is __identical__ to the sum of a sequence-independent constant and the log-likelihood of the PWM on the same sequence.
+Here we proposed an exact transformation from kernel to PWM, in the sense that the convolution result of the kernel on a given sequence fragment is __identical__ to the sum of a sequence-independent constant and the log-likelihood of the PWM on the same sequence.
 
 Steps of this exact transformation are detailed below:
 
 ![image](./README_files/Figure1.png)
 
-# How to use this tool
+# k2p Toolbox
 
-The tool is available from the `k2p-1.0` directory. It depends on the python packages numpy, pandas, and keras. Below is a copy of `README` in this archive:
+The k2p toolbox implements the transformation described in our manuscript. All codes are available from the `k2p-1.0` directory. The current implementatin depends on the python packages __numpy__, __pandas__, and __keras__. Below is a copy of `README` in this archive:
 
 ## Summary
 
